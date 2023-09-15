@@ -1,7 +1,10 @@
-import { API_KEY } from './secrets.js';
+import { API_KEY } from '../secrets.js';
 
-function fetchWeatherData() {
-    fetch(API_KEY)
+const parameters = new URLSearchParams(window.location.search);
+const cityParameter = parameters.get('city');
+
+function currentWeatherData(city) {
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
         .then(response => response.json())
         .then(data => {
             const location = data.location.name;
@@ -52,5 +55,5 @@ function fetchWeatherData() {
         });
 }
 
-// Call the fetchWeatherData function when the page loads
-window.addEventListener('load', fetchWeatherData);
+// Call the currentWeatherData function when the page loads
+currentWeatherData(cityParameter);
