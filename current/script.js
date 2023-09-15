@@ -7,6 +7,7 @@ function currentWeatherData(city) {
     fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
         .then(response => response.json())
         .then(data => {
+            const favicon = data.current.condition.icon;
             const location = data.location.name;
             const temperature = data.current.temp_c;
             const windDir = data.current.wind_degree;
@@ -39,6 +40,9 @@ function currentWeatherData(city) {
 
             const visibilityElement = document.createElement('p');
             visibilityElement.textContent = `Visibility: ${vis}km.`;
+
+            const faviconLink = document.getElementById('favicon');
+            faviconLink.href = favicon;
 
             // Append the data to the 'weather-info' div
             const weatherInfo = document.getElementById('weather-info');
