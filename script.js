@@ -1,4 +1,4 @@
-import { API_KEY } from "./secrets.js";
+const API_KEY = process.env.API_KEY;
 
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");

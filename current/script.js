@@ -1,4 +1,4 @@
-import { API_KEY } from "../secrets.js";
+const API_KEY = process.env.API_KEY;
 
 const parameters = new URLSearchParams(window.location.search);
 const cityParameter = parameters.get("city");
