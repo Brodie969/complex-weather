@@ -56,6 +56,9 @@ function currentWeatherData(city) {
 
             const heading = document.getElementById("heading");
             heading.innerHTML = `Weather Data For ${location}:`
+            const navLinks = document.getElementById("links");
+            navLinks.innerHTML = `<a href="/forecast?city=${location.toLowerCase()}">View Forecast For ${location}</a><br><br>
+                                  <a href="/astronomy?city=${location.toLowerCase()}">View Astronomy Data For ${location}</a><br><br>`;
         })
         .catch(error => {
             console.error("Error fetching weather data:", error);

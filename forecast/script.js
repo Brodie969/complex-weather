@@ -23,8 +23,6 @@ function currentForecast(city) {
         })
         .catch(error => {
             console.error("Error fetching weather data:", error);
-            // Display an error message to the user on the webpage
-            showErrorToUser();
         });
 }
 
@@ -38,6 +36,9 @@ function updateUniversalData(location, time) {
     locationData.appendChild(timeElement);
     const heading = document.getElementById("heading");
     heading.innerHTML = `Forecast For ${location}:`;
+    const navLinks = document.getElementById("links");
+            navLinks.innerHTML = `<a href="/current?city=${location.toLowerCase()}">View Current Weather For ${location}</a><br><br>
+                                  <a href="/astronomy?city=${location.toLowerCase()}">View Astronomy Data For ${location}</a><br><br>`;
 }
 
 function appendData(index, data) {

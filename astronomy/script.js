@@ -73,7 +73,11 @@ function currentAstroData(city) {
             astroInfo.appendChild(moonIlluminationElement);
 
             const heading = document.getElementById("heading");
-            heading.innerHTML = `Astronomy Data For ${location}:`
+            heading.innerHTML = `Astronomy Data For ${location}:`;
+            const navLinks = document.getElementById("links");
+            navLinks.innerHTML = `<a href="/current?city=${location.toLowerCase()}">View Current Weather For ${location}</a><br><br>
+                                  <a href="/forecast?city=${location.toLowerCase()}">View Forecast For ${location}</a><br><br>`;
+
         })
         .catch(error => {
             console.error("Error fetching weather data:", error);

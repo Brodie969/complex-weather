@@ -2,17 +2,12 @@
 
 A more complex weather app, building on from [brodie969/weather](https://github.com/brodie969/weather).
 
-## ~~In Progress~~ Completed
+## Completed
 
-While the code is stable, I'm still trying to figure out how to deploy a live demo without exposing my API Key, so see [`How To Run Locally`](#how-to-run-locally) to try for now.
+This code is *actually* pretty stable, so see [How To Run Locally](#how-to-run-locally) to try.
 
-Feel free to star this repo and come back when I put the live demo up.
 
-## To Do:
-
-- Figure Out How To Store API Key Securely For Live Demo
-
-## How To Run Locally:
+## How To Run Locally
 
 1. Get your free API Key from [WeatherAPI](https://www.weatherapi.com)
 
