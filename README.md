@@ -18,7 +18,12 @@ Feel free to star this repo and come back when I put the live demo up.
 
 2. Clone this repo
 
-[Download the latest release](https://github.com/brodie969/complex-weather/releases/latest), as I have modified the Javscript for it to work with Github Action and Github Secrets.
+[Download the .zip](https://github.com/brodie969/complex-weather/archive/refs/heads/main.zip)
+
+Or Use Git:
+```bash
+git clone https://github.com/brodie969/complex-weather/
+```
 
 3. Create a file called `secrets.js`.
 
