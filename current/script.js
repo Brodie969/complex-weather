@@ -1,7 +1,7 @@
-import { API_KEY } from '../secrets.js';
+import { API_KEY } from "../secrets.js";
 
 const parameters = new URLSearchParams(window.location.search);
-const cityParameter = parameters.get('city');
+const cityParameter = parameters.get("city");
 
 function currentWeatherData(city) {
     fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`)
@@ -20,32 +20,32 @@ function currentWeatherData(city) {
             const vis = data.current.vis_km;
 
             // Create HTML elements to display the data
-            const locationElement = document.createElement('p');
+            const locationElement = document.createElement("p");
             locationElement.textContent = `Location: ${location}.`;
 
-            const temperatureElement = document.createElement('p');
+            const temperatureElement = document.createElement("p");
             temperatureElement.textContent = `Temperature: ${temperature}°C.`;
 
-            const windElement = document.createElement('p');
+            const windElement = document.createElement("p");
             windElement.textContent = `Wind: ${windDir}°${windDir2} at ${windSpeed}kph. Gusts: ${windGust}kph.`;
 
-            const descriptionElement = document.createElement('p');
+            const descriptionElement = document.createElement("p");
             descriptionElement.textContent = `Description: ${description}.`;
 
-            const precipElement = document.createElement('p');
+            const precipElement = document.createElement("p");
             precipElement.textContent = `Precipitation: ${precip}mm.`;
 
-            const humidityElement = document.createElement('p');
+            const humidityElement = document.createElement("p");
             humidityElement.textContent = `Humidity: ${humid}%.`;
 
-            const visibilityElement = document.createElement('p');
+            const visibilityElement = document.createElement("p");
             visibilityElement.textContent = `Visibility: ${vis}km.`;
 
-            const faviconLink = document.getElementById('favicon');
+            const faviconLink = document.getElementById("favicon");
             faviconLink.href = favicon;
 
-            // Append the data to the 'weather-info' div
-            const weatherInfo = document.getElementById('weather-info');
+            // Append the data to the "weather-info" div
+            const weatherInfo = document.getElementById("weather-info");
             weatherInfo.appendChild(locationElement);
             weatherInfo.appendChild(temperatureElement);
             weatherInfo.appendChild(windElement);
@@ -55,7 +55,7 @@ function currentWeatherData(city) {
             weatherInfo.appendChild(visibilityElement);
         })
         .catch(error => {
-            console.error('Error fetching weather data:', error);
+            console.error("Error fetching weather data:", error);
         });
 }
 

@@ -1,7 +1,7 @@
-import { API_KEY } from '../secrets.js';
+import { API_KEY } from "../secrets.js";
 
 const parameters = new URLSearchParams(window.location.search);
-const cityParameter = parameters.get('city');
+const cityParameter = parameters.get("city");
 
 function currentAstroData(city) {
     fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${API_KEY}&q=${city}`)
@@ -20,25 +20,25 @@ function currentAstroData(city) {
             let sunStateString = "";
 
             // Create HTML elements to display the data
-            const locationElement = document.createElement('p');
+            const locationElement = document.createElement("p");
             locationElement.textContent = `Location: ${location}.`;
 
-            const sunriseElement = document.createElement('p');
+            const sunriseElement = document.createElement("p");
             sunriseElement.textContent = `Sunrise Time: ${sunrise}.`;
 
-            const sunsetElement = document.createElement('p');
+            const sunsetElement = document.createElement("p");
             sunsetElement.textContent = `Sunset Time: ${sunset}.`;
 
-            const moonriseElement = document.createElement('p');
+            const moonriseElement = document.createElement("p");
             moonriseElement.textContent = `Moonrise Time: ${moonrise}.`;
 
-            const moonsetElement = document.createElement('p');
+            const moonsetElement = document.createElement("p");
             moonsetElement.textContent = `Moonset Time: ${moonset}.`;
 
-            const moonPhaseElement = document.createElement('p');
+            const moonPhaseElement = document.createElement("p");
             moonPhaseElement.textContent = `Moon Phase: ${moonPhase}.`;
 
-            const moonIlluminationElement = document.createElement('p');
+            const moonIlluminationElement = document.createElement("p");
             moonIlluminationElement.textContent = `Moon Illumination: ${moonIllumination}.`;
 
             // Moon and Sun State Logic:
@@ -54,13 +54,13 @@ function currentAstroData(city) {
                 sunStateString = "Down";
             }
 
-            const sunStateElement = document.createElement('p');
+            const sunStateElement = document.createElement("p");
             sunStateElement.textContent = `Sun Is ${sunStateString}.`
 
-            const moonStateElement = document.createElement('p');
+            const moonStateElement = document.createElement("p");
             moonStateElement.textContent = `Moon Is ${moonStateString}.`
 
-            // Append the data to the 'weather-info' div
+            // Append the data to the "weather-info" div
             const astroInfo = document.getElementById("astro-info");
             astroInfo.appendChild(locationElement);
             astroInfo.appendChild(sunriseElement);
@@ -76,7 +76,7 @@ function currentAstroData(city) {
             heading.innerHTML = `Astronomy Data For ${location}:`
         })
         .catch(error => {
-            console.error('Error fetching weather data:', error);
+            console.error("Error fetching weather data:", error);
         });
 }
 
