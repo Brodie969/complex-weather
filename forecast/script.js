@@ -68,6 +68,8 @@ function appendData(index, data) {
         const humidityElement = document.createElement('p');
         humidityElement.textContent = `Average Humidity: ${humidity}%.`;
 
+        const lineBreak = document.createElement('br');
+
         dayElement.appendChild(dateElement);
         dayElement.appendChild(maxTempElement);
         dayElement.appendChild(minTempElement);
@@ -75,6 +77,7 @@ function appendData(index, data) {
         dayElement.appendChild(windSpeedElement);
         dayElement.appendChild(visibilityElement);
         dayElement.appendChild(humidityElement);
+        dayElement.appendChild(lineBreak);
     } else {
         // Handle the case where data for this day is not available
         const notAvailableElement = document.createElement('p');

@@ -54,3 +54,11 @@ h1 {
     border-radius: 5px;
     background-color: #fff;
 }
+
+@media (orientation: portrait) {
+    /* Increase font size and line height for better readability */
+    #weather-info p {
+        font-size: 50px;
+        line-height: 2;
+    }
+}

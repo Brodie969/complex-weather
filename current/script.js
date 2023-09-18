@@ -53,6 +53,9 @@ function currentWeatherData(city) {
             weatherInfo.appendChild(precipElement);
             weatherInfo.appendChild(humidityElement);
             weatherInfo.appendChild(visibilityElement);
+
+            const heading = document.getElementById("heading");
+            heading.innerHTML = `Weather Data For ${location}:`
         })
         .catch(error => {
             console.error("Error fetching weather data:", error);
