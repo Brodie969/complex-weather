@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+import { API_KEY } from "../secrets.js";
 
 const numberOfDays = 7; // Define the number of forecast days as a constant
 
