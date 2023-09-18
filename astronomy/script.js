@@ -61,7 +61,7 @@ function currentAstroData(city) {
             moonStateElement.textContent = `Moon Is ${moonStateString}.`
 
             // Append the data to the 'weather-info' div
-            const astroInfo = document.getElementById('astro-info');
+            const astroInfo = document.getElementById("astro-info");
             astroInfo.appendChild(locationElement);
             astroInfo.appendChild(sunriseElement);
             astroInfo.appendChild(sunsetElement);
@@ -71,6 +71,9 @@ function currentAstroData(city) {
             astroInfo.appendChild(moonStateElement);
             astroInfo.appendChild(moonPhaseElement);
             astroInfo.appendChild(moonIlluminationElement);
+
+            const heading = document.getElementById("heading");
+            heading.innerHTML = `Astronomy Data For ${location}:`
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
