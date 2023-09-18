@@ -1,20 +1,35 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #71b2f8;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #444;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     text-align: center;
+    color: #ddd;
 }
 
 .search-container {
@@ -25,7 +40,7 @@ h1 {
 #search-input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
@@ -33,7 +48,7 @@ h1 {
 #search-button {
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff;
+    color: #ddd;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
@@ -49,16 +64,16 @@ h1 {
 
 .result-item {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #444;
+    color: #ddd;
 }
 
 @media (orientation: portrait) {
-    /* Increase font size and line height for better readability */
-    #weather-info p {
-        font-size: 50px;
-        line-height: 2;
+    body {
+        font-size: 25px;
+        line-height: 1.5;
     }
 }

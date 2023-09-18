@@ -6,7 +6,8 @@
 
 /* Set a background color and font for the entire page */
 body {
-    background-color: #f0f0f0;
+    background-color: #333;
+    color: #fff;
     font-family: Arial, sans-serif;
     padding: 20px;
 }
@@ -14,16 +15,16 @@ body {
 /* Style the header */
 h1 {
     text-align: center;
-    color: #333;
+    color: #ddd;
     margin-bottom: 20px;
 }
 
 /* Style the weather info container */
 #weather-info {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #444;
+    border: 1px solid #555;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -31,13 +32,12 @@ h1 {
 #weather-info p {
     margin: 10px 0;
     font-size: 18px;
-    color: #333;
+    color: #ddd;
 }
 
 @media (orientation: portrait) {
-    /* Increase font size and line height for better readability */
-    #weather-info p {
-        font-size: 50px;
-        line-height: 2;
+    body {
+        font-size: 25px;
+        line-height: 1.5;
     }
 }
