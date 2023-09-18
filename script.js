@@ -18,7 +18,10 @@ searchButton.addEventListener("click", () => {
                 const resultItem = document.createElement("div");
                 resultItem.classList.add("result-item");
                 resultItem.innerHTML = `<h2><a href="/current?city=${location.name.toLowerCase()}">${location.name}, ${location.region}, ${location.country}</a></h2>
-                                        <p>Latitude: ${location.lat}, Longitude: ${location.lon}</p>`;
+                                        <p>Latitude: ${location.lat}, Longitude: ${location.lon}</p>
+                                        <p><a href="/current?city=${location.name.toLowerCase()}">View Current Weather For ${location.name}</a></p>
+                                        <p><a href="/astronomy?city=${location.name.toLowerCase()}">View Astronomy Data For ${location.name}</a></p>
+                                        <p><a href="/forecast?city=${location.name.toLowerCase()}">View Forecast For ${location.name}</a></p>`;
                 resultsContainer.appendChild(resultItem);
             });
         })
