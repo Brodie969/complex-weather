@@ -2,9 +2,9 @@
 
 A more complex weather app, building on from [brodie969/weather](https://github.com/brodie969/weather).
 
-## In Progress
+## ~~In Progress~~ Completed
 
-I'm still trying to figure out how to deploy a live demo without exposing my API Key, so see [`How To Run Locally`](#how-to-run-locally) to try for now.
+While the code is stable, I'm still trying to figure out how to deploy a live demo without exposing my API Key, so see [`How To Run Locally`](#how-to-run-locally) to try for now.
 
 Feel free to star this repo and come back when I put the live demo up.
 
