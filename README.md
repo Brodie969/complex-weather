@@ -33,7 +33,7 @@ git clone https://github.com/brodie969/complex-weather/
 
 3. Create a file called `secrets.js`.
 
-4. Place the URL, along with your key and city in `secrets.js` like this:
+4. Place your key in `secrets.js` as follows:
 
 ```javascript
 export const API_KEY = "1234567890";
