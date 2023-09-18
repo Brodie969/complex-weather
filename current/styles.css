@@ -7,9 +7,22 @@
 /* Set a background color and font for the entire page */
 body {
     background-color: #333;
-    color: #fff;
+    color: #ddd;
     font-family: Arial, sans-serif;
     padding: 20px;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ddd;
+}
+
+a:hover {
+    color: #007bff;
 }
 
 /* Style the header */
@@ -33,6 +46,11 @@ h1 {
     margin: 10px 0;
     font-size: 18px;
     color: #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media (orientation: portrait) {

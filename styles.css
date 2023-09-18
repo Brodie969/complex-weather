@@ -2,20 +2,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #333;
-    color: #fff;
+    color: #ddd;
 }
 
 a {
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
 }
 
 a:visited {
-    color: #fff;
+    color: #ddd;
 }
 
 a:hover {
-    color: #71b2f8;
+    color: #007bff;
 }
 
 .container {
