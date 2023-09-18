@@ -4,19 +4,17 @@ A more complex weather app, building on from [brodie969/weather](https://github.
 
 ## In Progress
 
-While a stable release hasn't been finished yet, and the code is changing every day, you can still clone and try out the application. See [`How To Run Locally`](#how-to-run-locally) to try.
+I'm still trying to figure out how to deploy a live demo without exposing my API Key, so see [`How To Run Locally`](#how-to-run-locally) to try for now.
 
-Or, even better, star this repo and come back when I put the live demo up.
+Feel free to star this repo and come back when I put the live demo up.
 
 ## To Do:
 
 - Add Loading Screen
 
-- Add Consistent Stylesheets
+- ~~Add Consistent Stylesheets~~ Now update colour scheme for more modern looks
 
 - Figure Out How To Store API Key Securely For Live Demo
-
-- Add Collapsable Days In `/forecast`
 
 ## How To Run Locally:
 
