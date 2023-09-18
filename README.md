@@ -10,8 +10,6 @@ Feel free to star this repo and come back when I put the live demo up.
 
 ## To Do:
 
-- ~~Add Consistent Stylesheets~~ Now update colour scheme for more modern looks
-
 - Figure Out How To Store API Key Securely For Live Demo
 
 ## How To Run Locally:
