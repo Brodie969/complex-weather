@@ -24,11 +24,11 @@ Or, even better, star this repo and come back when I put the live demo up.
 
 2. Clone this repo
 
-[Download the .zip](https://github.com/brodie969/weather/archive/refs/heads/main.zip)
+[Download the .zip](https://github.com/brodie969/complex-weather/archive/refs/heads/main.zip)
 
 Or Use Git:
 ```bash
-git clone https://github.com/brodie969/weather/
+git clone https://github.com/brodie969/complex-weather/
 ```
 
 3. Create a file called `secrets.js`.
