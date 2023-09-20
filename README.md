@@ -4,7 +4,7 @@ A more complex weather app, building on from [brodie969/weather](https://github.
 
 ## Completed
 
-This code is *actually* pretty stable, so see [How To Run Locally](#how-to-run-locally) to try.
+This code is fairly stable, so see [How To Run Locally](#how-to-run-locally) to try.
 
 ## Screenshots
 
